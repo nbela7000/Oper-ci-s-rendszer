@@ -1,0 +1,148 @@
+. topnav {
+    háttérszín : fekete;
+    túlcsordulás : rejtett;
+}
+  
+. topnav  a {
+    úszó : bal;
+    kijelző : blokk;
+    szín :  # f2f2f2 ;
+    szöveg igazítása : középre;
+    kitöltés :  14 px  16 px ;
+    szöveg-dekoráció : nincs;
+    betűméret :  17 px ;
+}
+  
+. topnav  a : hover {
+    háttérszín :  # ddd ;
+    szín : fekete;
+}
+
+. topnav  a . aktív {
+    háttérszín : barna;
+    szín : fehér;
+}
+
+. topnav . ikon {
+    kijelző : nincs;
+}
+
+@media képernyő és ( max-width :  600 px ) {
+    . topnav  a : not ( : first-child ) { display : none;}
+    . topnav  a . ikon {
+        úszó : jobb;
+        kijelző : blokk;
+    }
+}
+  
+@media képernyő és ( max-width :  600 px ) {
+    . topnav . reagáló { pozíció : relatív;}
+    . topnav . érzékeny  a . ikon {
+        pozíció : abszolút;
+        jobbra :  0 ;
+        felső :  0 ;
+    }
+    . topnav . reszponzív  a {
+        úszó : nincs;
+        kijelző : blokk;
+        szöveg igazítása : balra;
+    }
+}
+
+body ,  html {
+    magasság :  100 % ;
+    font-family : sans-serif;
+    background-image :  url ( "Background.jpg" );
+    háttér-méret : borító;
+    background-attachment : fix;
+}
+
+. hős-kép {
+  background-image :  lineáris gradiens ( rgba ( 0 ,  0 ,  0 ,  0.5 ) ,  rgba ( 0 ,  0 ,  0 ,  0.5 )) ,  url ( "Hőskép.jpg" );
+
+  magasság :  20 % ;
+
+  háttér-pozíció : középen;
+  background-repeat : nincs ismétlés;
+  háttér-méret : borító;
+  pozíció : relatív;
+}
+
+. hős-szöveg {
+  szöveg igazítása : középre;
+  pozíció : abszolút;
+  felső :  50 % ;
+  bal :  50 % ;
+  átalakítani :  lefordítani ( -50 % ,  -50 % );
+  szín : fehér;
+}
+
+. padding {
+    háttér :  rgba ( 0 ,  0 ,  0 ,  0.8 );
+    kitöltés :  10 px  50 px  50 px  50 px ;
+    szín : fehér;
+    szöveg igazítása : középre;
+    betűméret : nagyobb;
+}
+
+img {
+    maximális szélesség :  100 % ;
+}
+
+. center {
+    margó : auto;
+    maximális szélesség :  50 % ;
+}
+
+ul {
+    szöveg igazítása : balra;
+}
+
+dt {
+    szöveg-dekoráció : aláhúzás;
+}
+
+lábléc {
+  pozíció : rögzített;
+  balra :  0 ;
+  alsó :  0 ;
+  szélesség :  100 % ;
+  háttérszín : barna;
+  szín : fehér;
+  szöveg igazítása : középre;
+}
+
+. kozep {
+    margó : auto;
+    maximális szélesség :  300 px ;
+}
+
+input [ type = text ] {
+    szélesség :  250 px ;
+    kitöltés :  12 px  20 px ;
+    margó :  8 px  0 ;
+    kijelző : inline-block;
+    keret :  1 px solid # ccc ;
+    határsugár :  4 px ;
+    doboz-méretezés : keret-doboz
+}
+
+input [ type = button ] {
+    szélesség :  100 px ;
+    kitöltés :  12 px  20 px ;
+    margó :  8 px  0 ;
+    kijelző : inline-block;
+    keret :  1 px solid # ccc ;
+    határsugár :  4 px ;
+    doboz-méretezés : keret-doboz
+
+}
+
+input [ type = text ] : fókusz {
+    keret :  3 px tömör # 555 ;
+}
+
+táblázat ,  th ,  td {
+    keret :  1 px tömör fehér;
+    szöveg igazítása : középre;
+}
